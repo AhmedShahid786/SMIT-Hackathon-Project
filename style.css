@@ -1,0 +1,317 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+                            /* section 1 */
+#jugaad{
+    overflow: hidden;
+}
+#main{
+    width: 100dvw;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 15dvh 30dvh 30dvh;
+    overflow: hidden;
+    /* border: 2px solid black; */
+}
+
+.child{
+    /* border: 1px solid red; */
+    z-index: 2;
+}
+
+                            /* Background Setting */
+.spc{
+    grid-row:1/4;
+    grid-column: 1/4;
+    background-image: url(./assets/images/bgh.svg);
+    background-repeat:repeat;
+    background-position:center;
+    background-size:cover;
+    z-index:1;
+    clip-path: ellipse(90% 70% at 50% 25%);
+} 
+                            /* Background Setting End */
+                            /* Cell Placing */
+.I1{
+    grid-row:1/2;
+    grid-column:1/2;
+}
+.I2{
+    grid-row:1/2;
+    grid-column:2/3;
+}
+.I3{
+    grid-row:1/2;
+    grid-column:3/4;
+}
+
+                            /* Side Icon Styling */
+
+.I4{
+    /* overflow: hidden; */
+    grid-row:2/3;
+    grid-column:1/2;
+}
+
+.I4 > img{
+            margin-left: -80px;
+}
+
+                            /* Side Icon Styling End */
+                            /* Center Styling */
+.I5{
+    grid-row:2/4;
+    grid-column:2/3;
+    text-align: center;
+}
+
+.I5 > p{
+    color: white;
+    font-size: 55px;
+    font-family: Merriweather;
+    margin-top: 20px;
+}
+
+#part{
+    text-decoration:underline aqua solid 3px;
+}
+
+.I5 > button{
+           font-family:open sans, sans-serif;
+           font-weight:600;
+           color:#2e0c78;
+           background-color:#42f590;
+           margin-top: 10px;
+           padding: 15px 20px;
+           border-radius: 5px;
+}
+
+.I5 > img {
+            padding-top: 7%;
+            padding-right: 5%;
+            width: 40dvw;
+            height: 54dvh;
+}
+                            /* Center Styling End*/
+
+.I6{
+    grid-row:2/3;
+    grid-column:3/4;
+}
+
+.I7{
+    grid-row:3/4;
+    grid-column:1/2;
+}
+
+.I8{
+    grid-row:3/4;
+    grid-column:2/3;
+}
+
+                            /* Side Icon Styling */
+.I9{
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+    grid-row:2/4;
+    grid-column:3/4;
+} 
+
+.I9 > img{
+        margin-right: -40px;
+        width: 12dvw;
+}
+                            /* Side Icon Styling End */
+                            /* Nav Styling */
+.nav{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav > img{
+           margin-left: 10%;
+           height: 22px;
+}
+
+.nav > p{
+         color: white;
+         font-size: 20px;
+         margin-right: 10%;
+         text-decoration:underline aqua solid 2px;
+}
+                            /* Nav Styling End */
+                            /* section 1 End*/
+                            /* section 2*/
+ 
+#main2{
+    margin-top:30px;
+     width:100%;
+     height:50dvh;
+     /* border: 2px solid red; */
+     display: flex;
+     justify-content:center;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     align-content: center;
+     align-items: center;
+}
+
+.paras{
+       /* border: 2px solid black; */
+       width: 30dvw;
+       height:49dvh;
+       display: flex;
+       flex-direction:column;
+       align-items: center;
+       justify-content: space-evenly;
+       text-align: center;
+}
+
+.paras > span {
+               border: 1px solid  rgb(92, 101, 109);
+               width: 50px;
+               height: 50px;
+               border-radius: 25px;
+               text-align: center;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-family: merriweather,sans-serif;
+               font-size: large;
+}
+.subp{
+    color: #19191a;
+    font-weight: 600;
+    font-family: merriweather,sans-serif;
+    font-size: 20px;
+}
+
+.par{
+    color: rgb(92, 101, 109);
+    padding-left: 10px;
+    font-size: 21px;
+    /* line-height:20px; */
+    word-spacing: 1px;
+}
+                            /* Section 2 End*/
+                            /* Section 3*/
+#main3{
+    margin-top: 90px;
+    /* border: 2px solid black; */
+    width:100%;
+    height:80dvh;
+    display: flex;
+    align-items:flex-start;
+    padding-left:12vw;
+}
+
+#m3i{
+    z-index: 1;
+    position:absolute;
+}
+
+#m3i > img {
+              width:30vw;
+              height: 60vh;
+}
+
+#subm{
+    border: 2px solid black;
+    width: 51dvw;
+    height:55dvh;
+    background-color: #341d66;
+    z-index: 2;
+    margin:141px 0px 0px 330px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:0px 60px;
+}
+
+#m3h{
+            color: aliceblue;
+            font-size: 50px;
+            font-family: merriweather;
+}
+
+#m3p{
+     color: aliceblue;
+     font-size:19px;
+     font-family: open sans;
+}
+
+#subm > button{
+        font-family:open sans, sans-serif;
+        font-weight:750;
+        font-size:medium;
+        color:#2e0c78;
+        background-color:#42f590;
+        margin-top: 10px;
+        padding: 20px 5px;
+        border-radius: 5px;
+        width:15vw;
+}
+
+#m3img{
+    position:absolute;
+    z-index: 3;
+    margin: 340px 0px 0px 750px;
+}
+                            /* Section 3 End*/        
+                            /* Section 4*/
+
+#main4{
+     /* border: 2px solid black; */
+     margin-top: 4%;
+     width:100%;
+     height: 20dvh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+
+#cdiv > img{
+            margin: 0px 12px;
+}
+
+                            /* Section 4 End*/       
+                            /*Responsive Setting*/
+
+@media (max-width:768px){
+                    #main2{
+                        flex-direction: column;
+                    }
+}
+
+@media(max-width:600px)
+{
+    #main{
+        width: 100dvw;
+        height: 100dvh;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 15dvh 40dvh 40dvh;
+        overflow: hidden;
+        /* border: 2px solid black; */
+    }
+
+    #main3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #subm{
+        margin:850px 0px 0px 0px;
+        padding-left:0vw;
+    }
+    }
+                            /* Responsive Setting End */
